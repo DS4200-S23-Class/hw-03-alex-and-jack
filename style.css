@@ -8,16 +8,19 @@ h1 {
 	text-align: center;
 }
 
- #container {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-      }
-
-.row {
+.container {
   display: flex;
 }
 
 .column {
-  flex: 50%;
+  flex: 1;
+  padding: 16px;
+}
+
+.left {
+  background-color: none;
+}
+
+.right {
+  background-color: none;
 }
