@@ -14,3 +14,10 @@ h1 {
     align-items: left;
       }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
