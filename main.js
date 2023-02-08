@@ -1,10 +1,17 @@
-let numberOfClicks = 0;
+const btn = document.getElementById("h1-color-change-btn");
+const h1s = document.querySelectorAll("h1");
 
-function buttonClicked(){
-	
-	numberOfClicks += 1;
+btn.addEventListener("click", function() {
+  h1s.forEach(h1 => {
+    h1.style.color = getRandomColor();
+  });
+});
 
-	// select the element we want to modify
-	let buttonDiv = document.getElementById("button-div");
-
-	buttonDiv.innerHTML = "Number of times button clicked: " + numberOfClicks;s
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
