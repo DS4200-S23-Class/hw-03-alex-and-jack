@@ -1,8 +1,9 @@
 style.css
 
 body { 
-	font-family: 'Arial';
+	font-family: 'Arial', sans-serif;
   text-align: center;
+  font-size: 16px;
 }
 
 button {
@@ -13,12 +14,11 @@ button {
   color: white;
   cursor: pointer;
   color: black;
-  display: inline-block;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 h1 {
-	text-align: center;
+	font-size: 20px;
 }
 
 .container {
