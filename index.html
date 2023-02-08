@@ -5,12 +5,23 @@
     <link rel="stylesheet" href="style.css">
     <meta charset=utf-8/>
 
+
     <title>hw-03</title>
 </head>
 
-
+<script src="main.js"></script>
 <body>
     <h1>hw-03: Interactive Webpage, and Marks & Channels</h1>
+
+    <div>
+       <button type="button" onClick="buttonClicked()"> Click me!</button>  
+
+        <div id="button-div" class="gen">
+
+            Number of times button clicked: 0
+
+        </div>
+    </div>
 
     <div id='container' class = 'container'>
     
@@ -25,7 +36,7 @@
                     Mark 1: Areas (the areas of each state on the US map)
                 </li>
                 <li>
-                Mark 2: Trend Line at the top of the graphic
+                    Mark 2: Trend Line at the top of the graphic
                 </li>
             </ul>
 
@@ -33,11 +44,11 @@
 
             <ul>
                 <li>
-                   Channel 1: Color 
+                   Channel 1: Color Hue
                 </li>
                 <ul>
                     <li>
-                        Color represents the attribute of what politcal part women would have voted for
+                        Color represents the attribute of what politcal party women would have voted for
                     </li>
                     <li>
                         Color is an appropriate mapping in thi example because color allows the user to quickly identify which party would have won each state just using the colors. Colors are easy to spot and one of the most effective visualization tools.
@@ -176,7 +187,10 @@
                     Mark 1: Areas (the areas of each state on the US map)
                 </li>
                 <li>
-                Mark 2: Trend Line at the top of the graphic
+                    Mark 2: Points (points of covid outbreak)
+                </li>
+                <li>
+                    Mark 3: Color (color of outbreak point to show severity)
                 </li>
             </ul>
 
@@ -184,27 +198,27 @@
 
             <ul>
                 <li>
-                   Channel 1: Color 
+                   Channel 1: Color Hue
                 </li>
                 <ul>
                     <li>
-                        Color represents the attribute of what politcal part women would have voted for
+                        Color represents the attribute of the severity of the outbreak for a given point
                     </li>
                     <li>
-                        Color is an appropriate mapping in thi example because color allows the user to quickly identify which party would have won each state just using the colors. Colors are easy to spot and one of the most effective visualization tools.
+                        Color is an appropriate mapping tool in this example because it uses two opposite colors (Red and Orange) to display severity. This makes it easy for the user to differentiate between data points. 
                     </li>
                      
                 </ul>
 
                 <li>
-                   Channel 2: Shape 
+                   Channel 2: Shape Area
                 </li>
                 <ul>
                     <li>
-                        Shape of graphic allows user to easily see that this is the US
+                        Different shape sizes show the attribute of how many people were infected in a given area
                     </li>
                     <li>
-                        This is a good mapping because it shows the viewer each state outlined with a color on which party won in that states electorate
+                        This is an ok mapping technique becasue it allows the user to clearly see which areas had high amounts of exposure. However, it also makes the visualization a little confusing as it can be hard to decipher between different data points. 
                     </li>
                      
                 </ul>
@@ -216,14 +230,13 @@
 
             <ul>
                 <li>
-                   Colormap 1: Politcal Party (Red and Blue)
-                </li>
+                   Colormap 1: Outbreak Severity (death rate) (Red and Orange)
                 <ul>
                     <li>
-                        This red and blue color map shows the attribute of politcal party. Blue for democratic and red for republican and which pary won each state.
+                        This red and blue color map shows the attribute of outbreak severity which has to do with the death rate. 
                     </li>
                     <li>
-                        This is a good mapping in this example because color is a very effective way of showing categorical data like political party. Since there are only two cateogries in this example (Democrat and Republican) it is easy for the viewer to quickly distinguish the two using color. 
+                        This is an ok mapping tool becuase it does allow the user to differentiate between data points based on their color hue, but it is also confusing as the visualization does look a little overcrowded. 
                     </li>
                     
                 </ul>
@@ -234,6 +247,12 @@
     </div>
 
     <h1 style="font-size: 26px">Acknowledgements</h1>
+    <ul>
+        <li>Professor Mosca</li>
+        <li>
+            <a href="https://www.usatoday.com/in-depth/graphics/2020/12/02/covid-19-hotspots-animated-map/6476091002/">USA Today</a>
+        </li>
+    </ul>
 
 </body>
 

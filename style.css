@@ -1,7 +1,20 @@
 style.css
 
 body { 
-	font-family: 'Arial';	
+	font-family: 'Arial';
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightblue;
+  color: white;
+  cursor: pointer;
+  color: black;
+  display: inline-block;
+  margin: 20px;
 }
 
 h1 {
